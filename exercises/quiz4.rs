@@ -6,6 +6,7 @@
 // Write a macro that passes the quiz! No hints this time, you can do it!
 #[macro_use]
 mod macros {
+    #[allow(unused_macros)]
     macro_rules! my_macro {
         ($name:expr) => {
             format!("Hello {}", $name)
@@ -15,6 +16,7 @@ mod macros {
 
 #[cfg(test)]
 mod tests {
+    #[allow(unused_imports)]
     use super::*;
 
     #[test]
